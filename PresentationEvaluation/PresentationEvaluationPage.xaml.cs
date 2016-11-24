@@ -194,9 +194,7 @@ namespace PresentationEvaluation
 						string responseString = await response.Content.ReadAsStringAsync();
 
 						if (!response.IsSuccessStatusCode)
-						{
 							throw new Exception("Unable to post to PowerBI: " + response.StatusCode);
-						}
 					}
 				}
 				else
